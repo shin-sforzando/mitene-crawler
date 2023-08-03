@@ -252,3 +252,6 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,windows,linux,node,visualstudiocode,data
 ### Project Specific ###
+/test-results/
+/playwright-report/
+/playwright/.cache/

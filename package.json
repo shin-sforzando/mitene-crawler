@@ -1,0 +1,16 @@
+{
+  "name": "mitene-crawler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Download all images/videos from personal mitene web",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "Shin'ichiro Suzuki",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.36.2"
+  }
+}
