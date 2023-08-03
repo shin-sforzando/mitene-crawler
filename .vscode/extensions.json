@@ -3,6 +3,7 @@
     "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
     "ms-playwright.playwright",
+    "rome.rome",
     "shd101wyy.markdown-preview-enhanced",
     "streetsidesoftware.code-spell-checker",
     "yzhang.markdown-all-in-one"

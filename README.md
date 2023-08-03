@@ -17,18 +17,16 @@
 
 Download all images/videos from personal mitene web.
 
-I look forward to the day when this tool will no longer be necessary due to official features of mitene.
+I hope to see the day when this tool will no longer be necessary with the official implementation of mitene.
 
 <!-- TOC -->
 
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [Develop](#develop)
-  - [Launch Dev Server](#launch-dev-server)
+  - [Start](#start)
   - [Lint](#lint)
   - [Format](#format)
-  - [Build](#build)
-  - [Deploy](#deploy)
 - [Misc](#misc)
 - [Notes](#notes)
   - [LICENSE](#license)
@@ -38,7 +36,9 @@ I look forward to the day when this tool will no longer be necessary due to offi
 
 - [Volta](https://volta.sh) as _JS Tool Manager_
   - [Node.js](https://nodejs.org/) (Version 18 LTS or higher)
-    - [Playwright](https://playwright.dev) (Version 1.36 or higher)
+    - [Playwright](https://playwright.dev) (Version 1.36.2 or higher)
+    - [Rome](https://rome.tools) (Version 12.1.3)
+    - [husky](https://typicode.github.io/husky/) (Version 8.0.3 or higher)
 - [git-secret](https://git-secret.io) as _Secret File Manager_
 - [direnv](https://direnv.net) as _`.env` Loader_
 
@@ -46,17 +46,13 @@ I look forward to the day when this tool will no longer be necessary due to offi
 
 ```shell
 $ npm run
-Lifecycle scripts included in mitene-crawler@0.0.0:
+Lifecycle scripts included in mitene-crawler@1.0.0:
   start
-    next start
+    playwright test
 
 available via `npm run-script`:
-  reinstall
-    node -e 'fs.rmSync(`node_modules`, {recursive:true, force:true})' && npm install
-  dev
-    next dev
-  build
-    next build
+  prepare
+    husky install
   lint
     rome check --apply .
   format
@@ -67,9 +63,9 @@ available via `npm run-script`:
 
 `npm install` to install dependencies.
 
-### Launch Dev Server
+### Start
 
-`npm run dev` to launch development server.
+(T. B. D.)
 
 ### Lint
 
@@ -78,14 +74,6 @@ available via `npm run-script`:
 ### Format
 
 `npm run format` to format all scripts.
-
-### Build
-
-(T. B. D.)
-
-### Deploy
-
-If it is linked to [Vercel](https://vercel.com/), it will be deployed automatically with each Push.
 
 ## Misc
 
