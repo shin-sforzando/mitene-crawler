@@ -11,6 +11,10 @@ require("dotenv").config();
  */
 export default defineConfig({
   testDir: "./src",
+  /* Global Setup to set something up once before running all tests */
+  globalSetup: require.resolve("./src/global-setup"),
+  /* Global Teardown to run something once after all the tests */
+  globalTeardown: require.resolve("./src/global-teardown"),
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

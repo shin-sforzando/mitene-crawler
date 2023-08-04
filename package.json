@@ -10,6 +10,7 @@
     "reveal": "git secret reveal -vf",
     "start": "playwright test",
     "start:ui": "playwright test --ui",
+    "start:debug": "playwright test --debug",
     "lint": "rome check --apply .",
     "format": "rome format --write ."
   },
