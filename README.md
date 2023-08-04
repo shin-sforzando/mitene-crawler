@@ -23,7 +23,8 @@ I hope to see the day when this tool will no longer be necessary with the offici
 
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
-  - [Develop](#develop)
+  - [Setup](#setup)
+  - [Configure](#configure)
   - [Start](#start)
   - [Lint](#lint)
   - [Format](#format)
@@ -59,9 +60,21 @@ available via `npm run-script`:
     rome format --write .
 ```
 
-### Develop
+### Setup
 
 `npm install` to install dependencies.
+
+### Configure
+
+Prepare `.env` with reference to `.env.sample`.
+
+```.env
+BASE_URL=https://mitene.us/f/xxxxxxxxxxxxx
+```
+
+`xxxxxxxxxxxxx` should be your url of personal mitene web.
+
+Currently, crawling under password protection is not supported.
 
 ### Start
 
