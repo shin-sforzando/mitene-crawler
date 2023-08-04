@@ -2,5 +2,5 @@
   "editor.defaultFormatter": "rome.rome",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": { "quickfix.rome": true },
-  "cSpell.words": ["direnv", "mitene"]
+  "cSpell.words": ["direnv", "gitsecret", "mitene"]
 }

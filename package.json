@@ -9,6 +9,7 @@
     "hide": "git secret hide -vmF",
     "reveal": "git secret reveal -vf",
     "start": "playwright test",
+    "start:ui": "playwright test --ui",
     "lint": "rome check --apply .",
     "format": "rome format --write ."
   },
